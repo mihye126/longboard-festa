@@ -58,7 +58,7 @@ tomcat:
     enabled: true
 spring:
   datasource:
-    url: "{{ secret.JDBC_URL }}" # 호스트·포트·DB명
+    url: "${JDBC_URL}" # 호스트·포트·DB명
     username:                               # DB 계정
     password:                               # DB 비밀번호
     driver-class-name: org.postgresql.Driver
